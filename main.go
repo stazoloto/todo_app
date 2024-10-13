@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"todo_app/routes"
+)
 
 func main() {
-	fmt.Println("jnvjnknf")
+	r := routes.SetupRouter()
+	r.Run(":8080")
 }
